@@ -1,0 +1,16 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+language: objective-c
+cache: cocoapods
+podfile: ObjCStarter/Podfile
+osx_image: xcode9.3
+before_install:
+ - gem install cocoapods  -v '1.0.1' # Since Travis is not always on latest version
+ - pod update --project-directory=ObjCStarter
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+- set -o pipefail && xcodebuild -workspace "ObjCStarter/ObjCStarter.xcworkspace" -scheme "ObjCStarter" -sdk iphonesimulator -destination 'name=iPhone X' build 
+- pod lib lint --quick

@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13A850491F136FC4003F69DA /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A8503E1F136FC4003F69DA /* CardIO.m */; };
+		13A8504A1F136FC4003F69DA /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A850461F136FC4003F69DA /* libCardIO.a */; };
+		13A8504B1F136FC4003F69DA /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A850471F136FC4003F69DA /* libopencv_core.a */; };
+		13A8504C1F136FC4003F69DA /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A850481F136FC4003F69DA /* libopencv_imgproc.a */; };
+		22672AF12315E1FC007B371F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE77323063F7A00E77B71 /* SDWebImage.framework */; };
+		22672AF22315E1FC007B371F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE77323063F7A00E77B71 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22672AF52315E206007B371F /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE77523063F7A00E77B71 /* SDWebImageMapKit.framework */; };
+		22672AF62315E206007B371F /* SDWebImageMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE77523063F7A00E77B71 /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		227CE75723063B6100E77B71 /* CleverTapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE75423063B0600E77B71 /* CleverTapSDK.framework */; };
+		227CE75823063B6100E77B71 /* CleverTapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 227CE75423063B0600E77B71 /* CleverTapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7208FB121DC207A800D4D646 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7208FB111DC207A800D4D646 /* ContactUs.swift */; };
+		721951AE1D081A3F0051F93C /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721951AD1D081A3F0051F93C /* Wishlist.swift */; };
+		721951B01D08278B0051F93C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721951AF1D08278B0051F93C /* Cart.swift */; };
+		721951C51D0853BF0051F93C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951C41D0853BF0051F93C /* Accelerate.framework */; };
+		721951C71D0853CA0051F93C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951C61D0853CA0051F93C /* AVFoundation.framework */; };
+		721951C91D0853D30051F93C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951C81D0853D30051F93C /* CoreMedia.framework */; };
+		721951CB1D0853DB0051F93C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951CA1D0853DB0051F93C /* MessageUI.framework */; };
+		721951CD1D0853E60051F93C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951CC1D0853E60051F93C /* SafariServices.framework */; };
+		721951D11D0853FA0051F93C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951CE1D0853FA0051F93C /* Bolts.framework */; };
+		721951D21D0853FA0051F93C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951CF1D0853FA0051F93C /* Parse.framework */; };
+		721951DF1D0857CC0051F93C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 721951DE1D0857CC0051F93C /* libxml2.tbd */; };
+		7225B08B1D096AFB00D85BCA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7225B08A1D096AFB00D85BCA /* Account.swift */; };
+		7225B08D1D09A72800D85BCA /* MyOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7225B08C1D09A72800D85BCA /* MyOrders.swift */; };
+		722983EA1D02FD4A006109AC /* ProdDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722983E91D02FD4A006109AC /* ProdDetails.swift */; };
+		7230748B1C52375100C5DF7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230748A1C52375100C5DF7E /* AudioToolbox.framework */; };
+		7230748D1C52375600C5DF7E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230748C1C52375600C5DF7E /* CFNetwork.framework */; };
+		7230748F1C52375A00C5DF7E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230748E1C52375A00C5DF7E /* CoreLocation.framework */; };
+		723074911C52376100C5DF7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723074901C52376100C5DF7E /* CoreGraphics.framework */; };
+		723074931C52376600C5DF7E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723074921C52376600C5DF7E /* MobileCoreServices.framework */; };
+		723074951C52376A00C5DF7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723074941C52376A00C5DF7E /* QuartzCore.framework */; };
+		723074971C52376F00C5DF7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723074961C52376F00C5DF7E /* Security.framework */; };
+		7230749B1C52377800C5DF7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230749A1C52377800C5DF7E /* SystemConfiguration.framework */; };
+		7230749D1C52377C00C5DF7E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230749C1C52377C00C5DF7E /* libz.tbd */; };
+		7230749F1C52378000C5DF7E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7230749E1C52378000C5DF7E /* libsqlite3.tbd */; };
+		723C6AEB1D002A190064C723 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C6AEA1D002A190064C723 /* Home.swift */; };
+		723C6AED1D002EDF0064C723 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C6AEC1D002EDF0064C723 /* ProductsList.swift */; };
+		724B97041C522DF200F7704D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B97031C522DF200F7704D /* AppDelegate.swift */; };
+		724B97091C522DF200F7704D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724B97071C522DF200F7704D /* Main.storyboard */; };
+		724B970B1C522DF200F7704D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724B970A1C522DF200F7704D /* Assets.xcassets */; };
+		724B97191C522E6D00F7704D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B97151C522E6D00F7704D /* Login.swift */; };
+		724B971A1C522E6D00F7704D /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B97161C522E6D00F7704D /* SignUp.swift */; };
+		724B971B1C522E6D00F7704D /* TermsOfUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B97171C522E6D00F7704D /* TermsOfUse.swift */; };
+		724B971C1C522E6D00F7704D /* tou.html in Resources */ = {isa = PBXBuildFile; fileRef = 724B97181C522E6D00F7704D /* tou.html */; };
+		726810801E3244FC005686A6 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726810771E3244FC005686A6 /* libPayPalMobile.a */; };
+		7295FD211CEB424A008F0367 /* Titillium-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD111CEB424A008F0367 /* Titillium-Black.otf */; };
+		7295FD221CEB424A008F0367 /* Titillium-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD121CEB424A008F0367 /* Titillium-Bold.otf */; };
+		7295FD231CEB424A008F0367 /* Titillium-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD131CEB424A008F0367 /* Titillium-BoldItalic.otf */; };
+		7295FD241CEB424A008F0367 /* Titillium-BoldUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD141CEB424A008F0367 /* Titillium-BoldUpright.otf */; };
+		7295FD251CEB424A008F0367 /* Titillium-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD151CEB424A008F0367 /* Titillium-Light.otf */; };
+		7295FD261CEB424A008F0367 /* Titillium-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD161CEB424A008F0367 /* Titillium-LightItalic.otf */; };
+		7295FD271CEB424A008F0367 /* Titillium-LightUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD171CEB424A008F0367 /* Titillium-LightUpright.otf */; };
+		7295FD281CEB424A008F0367 /* Titillium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD181CEB424A008F0367 /* Titillium-Regular.otf */; };
+		7295FD291CEB424A008F0367 /* Titillium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD191CEB424A008F0367 /* Titillium-RegularItalic.otf */; };
+		7295FD2A1CEB424A008F0367 /* Titillium-RegularUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1A1CEB424A008F0367 /* Titillium-RegularUpright.otf */; };
+		7295FD2B1CEB424A008F0367 /* Titillium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1B1CEB424A008F0367 /* Titillium-Semibold.otf */; };
+		7295FD2C1CEB424A008F0367 /* Titillium-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1C1CEB424A008F0367 /* Titillium-SemiboldItalic.otf */; };
+		7295FD2D1CEB424A008F0367 /* Titillium-SemiboldUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1D1CEB424A008F0367 /* Titillium-SemiboldUpright.otf */; };
+		7295FD2E1CEB424A008F0367 /* Titillium-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1E1CEB424A008F0367 /* Titillium-Thin.otf */; };
+		7295FD2F1CEB424A008F0367 /* Titillium-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD1F1CEB424A008F0367 /* Titillium-ThinItalic.otf */; };
+		7295FD301CEB424A008F0367 /* Titillium-ThinUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7295FD201CEB424A008F0367 /* Titillium-ThinUpright.otf */; };
+		72AF49511C522F9700C79F5E /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AF49501C522F9700C79F5E /* Configs.swift */; };
+		72C2E0BE1E3B5F3F00883B3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2E0BA1E3B5F3F00883B3D /* FBSDKCoreKit.framework */; };
+		72C2E0BF1E3B5F3F00883B3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2E0BB1E3B5F3F00883B3D /* FBSDKLoginKit.framework */; };
+		72C2E0C01E3B5F3F00883B3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2E0BC1E3B5F3F00883B3D /* FBSDKShareKit.framework */; };
+		72C2E0C11E3B5F3F00883B3D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2E0BD1E3B5F3F00883B3D /* ParseFacebookUtilsV4.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22672AF32315E1FC007B371F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A2CADFE1AB4BB5300B6BC39;
+			remoteInfo = SDWebImage;
+		};
+		22672AF72315E206007B371F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 80B6DF862142B71600BCB334;
+			remoteInfo = SDWebImageMapKit;
+		};
+		227CE75323063B0600E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0C7BBBD207D82C0001345EF;
+			remoteInfo = CleverTapSDK;
+		};
+		227CE75523063B0600E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D014B8D720E2F963001E0780;
+			remoteInfo = CleverTapSDK_TVOS;
+		};
+		227CE75923063B6100E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C7BBBC207D82C0001345EF;
+			remoteInfo = CleverTapSDK;
+		};
+		227CE77023063F7A00E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = "SDWebImage static";
+		};
+		227CE77223063F7A00E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
+			remoteInfo = SDWebImage;
+		};
+		227CE77423063F7A00E77B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80B6DFEE2142B71600BCB334;
+			remoteInfo = SDWebImageMapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		227CE75B23063B6100E77B71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22672AF22315E1FC007B371F /* SDWebImage.framework in Embed Frameworks */,
+				22672AF62315E206007B371F /* SDWebImageMapKit.framework in Embed Frameworks */,
+				227CE75823063B6100E77B71 /* CleverTapSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13A8503D1F136FC4003F69DA /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		13A8503E1F136FC4003F69DA /* CardIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIO.m; sourceTree = "<group>"; };
+		13A8503F1F136FC4003F69DA /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		13A850401F136FC4003F69DA /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		13A850411F136FC4003F69DA /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		13A850421F136FC4003F69DA /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		13A850431F136FC4003F69DA /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		13A850441F136FC4003F69DA /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		13A850451F136FC4003F69DA /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		13A850461F136FC4003F69DA /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		13A850471F136FC4003F69DA /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		13A850481F136FC4003F69DA /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CleverTapSDK.xcodeproj; path = "../../clevertap-ios-sdk-3.6.0/CleverTapSDK.xcodeproj"; sourceTree = "<group>"; };
+		227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		720620E71D9CF86100F5D82C /* Shoppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shoppy.entitlements; sourceTree = "<group>"; };
+		7208FB111DC207A800D4D646 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		721951AD1D081A3F0051F93C /* Wishlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
+		721951AF1D08278B0051F93C /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		721951B11D0852D70051F93C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		721951C41D0853BF0051F93C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		721951C61D0853CA0051F93C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		721951C81D0853D30051F93C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		721951CA1D0853DB0051F93C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		721951CC1D0853E60051F93C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		721951CE1D0853FA0051F93C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Shoppy/Parse/Bolts.framework; sourceTree = "<group>"; };
+		721951CF1D0853FA0051F93C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Shoppy/Parse/Parse.framework; sourceTree = "<group>"; };
+		721951DE1D0857CC0051F93C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		7225B08A1D096AFB00D85BCA /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7225B08C1D09A72800D85BCA /* MyOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrders.swift; sourceTree = "<group>"; };
+		722983E91D02FD4A006109AC /* ProdDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdDetails.swift; sourceTree = "<group>"; };
+		7230748A1C52375100C5DF7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7230748C1C52375600C5DF7E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7230748E1C52375A00C5DF7E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		723074901C52376100C5DF7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		723074921C52376600C5DF7E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		723074941C52376A00C5DF7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		723074961C52376F00C5DF7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7230749A1C52377800C5DF7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7230749C1C52377C00C5DF7E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7230749E1C52378000C5DF7E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		723C6AEA1D002A190064C723 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		723C6AEC1D002EDF0064C723 /* ProductsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		724B97001C522DF200F7704D /* Shoppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		724B97031C522DF200F7704D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		724B97081C522DF200F7704D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		724B970A1C522DF200F7704D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724B970F1C522DF200F7704D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		724B97151C522E6D00F7704D /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		724B97161C522E6D00F7704D /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		724B97171C522E6D00F7704D /* TermsOfUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUse.swift; sourceTree = "<group>"; };
+		724B97181C522E6D00F7704D /* tou.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tou.html; sourceTree = "<group>"; };
+		726810771E3244FC005686A6 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		726810781E3244FC005686A6 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		726810791E3244FC005686A6 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		7268107A1E3244FC005686A6 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		7268107B1E3244FC005686A6 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		7268107C1E3244FC005686A6 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		7268107D1E3244FC005686A6 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		7268107E1E3244FC005686A6 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		7295FD111CEB424A008F0367 /* Titillium-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Black.otf"; sourceTree = "<group>"; };
+		7295FD121CEB424A008F0367 /* Titillium-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Bold.otf"; sourceTree = "<group>"; };
+		7295FD131CEB424A008F0367 /* Titillium-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-BoldItalic.otf"; sourceTree = "<group>"; };
+		7295FD141CEB424A008F0367 /* Titillium-BoldUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-BoldUpright.otf"; sourceTree = "<group>"; };
+		7295FD151CEB424A008F0367 /* Titillium-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Light.otf"; sourceTree = "<group>"; };
+		7295FD161CEB424A008F0367 /* Titillium-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-LightItalic.otf"; sourceTree = "<group>"; };
+		7295FD171CEB424A008F0367 /* Titillium-LightUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-LightUpright.otf"; sourceTree = "<group>"; };
+		7295FD181CEB424A008F0367 /* Titillium-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Regular.otf"; sourceTree = "<group>"; };
+		7295FD191CEB424A008F0367 /* Titillium-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-RegularItalic.otf"; sourceTree = "<group>"; };
+		7295FD1A1CEB424A008F0367 /* Titillium-RegularUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-RegularUpright.otf"; sourceTree = "<group>"; };
+		7295FD1B1CEB424A008F0367 /* Titillium-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Semibold.otf"; sourceTree = "<group>"; };
+		7295FD1C1CEB424A008F0367 /* Titillium-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		7295FD1D1CEB424A008F0367 /* Titillium-SemiboldUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-SemiboldUpright.otf"; sourceTree = "<group>"; };
+		7295FD1E1CEB424A008F0367 /* Titillium-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Thin.otf"; sourceTree = "<group>"; };
+		7295FD1F1CEB424A008F0367 /* Titillium-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-ThinItalic.otf"; sourceTree = "<group>"; };
+		7295FD201CEB424A008F0367 /* Titillium-ThinUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-ThinUpright.otf"; sourceTree = "<group>"; };
+		72AF49501C522F9700C79F5E /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		72C2E0BA1E3B5F3F00883B3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Shoppy/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		72C2E0BB1E3B5F3F00883B3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Shoppy/Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		72C2E0BC1E3B5F3F00883B3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Shoppy/Facebook/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		72C2E0BD1E3B5F3F00883B3D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Shoppy/Facebook/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		724B96FD1C522DF200F7704D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721951DF1D0857CC0051F93C /* libxml2.tbd in Frameworks */,
+				721951D11D0853FA0051F93C /* Bolts.framework in Frameworks */,
+				72C2E0C11E3B5F3F00883B3D /* ParseFacebookUtilsV4.framework in Frameworks */,
+				721951D21D0853FA0051F93C /* Parse.framework in Frameworks */,
+				22672AF12315E1FC007B371F /* SDWebImage.framework in Frameworks */,
+				721951CD1D0853E60051F93C /* SafariServices.framework in Frameworks */,
+				72C2E0BE1E3B5F3F00883B3D /* FBSDKCoreKit.framework in Frameworks */,
+				721951CB1D0853DB0051F93C /* MessageUI.framework in Frameworks */,
+				13A8504A1F136FC4003F69DA /* libCardIO.a in Frameworks */,
+				721951C91D0853D30051F93C /* CoreMedia.framework in Frameworks */,
+				72C2E0C01E3B5F3F00883B3D /* FBSDKShareKit.framework in Frameworks */,
+				721951C71D0853CA0051F93C /* AVFoundation.framework in Frameworks */,
+				13A8504C1F136FC4003F69DA /* libopencv_imgproc.a in Frameworks */,
+				72C2E0BF1E3B5F3F00883B3D /* FBSDKLoginKit.framework in Frameworks */,
+				7230748B1C52375100C5DF7E /* AudioToolbox.framework in Frameworks */,
+				721951C51D0853BF0051F93C /* Accelerate.framework in Frameworks */,
+				7230749B1C52377800C5DF7E /* SystemConfiguration.framework in Frameworks */,
+				13A8504B1F136FC4003F69DA /* libopencv_core.a in Frameworks */,
+				227CE75723063B6100E77B71 /* CleverTapSDK.framework in Frameworks */,
+				7230749F1C52378000C5DF7E /* libsqlite3.tbd in Frameworks */,
+				7230749D1C52377C00C5DF7E /* libz.tbd in Frameworks */,
+				723074971C52376F00C5DF7E /* Security.framework in Frameworks */,
+				22672AF52315E206007B371F /* SDWebImageMapKit.framework in Frameworks */,
+				723074951C52376A00C5DF7E /* QuartzCore.framework in Frameworks */,
+				723074931C52376600C5DF7E /* MobileCoreServices.framework in Frameworks */,
+				723074911C52376100C5DF7E /* CoreGraphics.framework in Frameworks */,
+				7230748F1C52375A00C5DF7E /* CoreLocation.framework in Frameworks */,
+				726810801E3244FC005686A6 /* libPayPalMobile.a in Frameworks */,
+				7230748D1C52375600C5DF7E /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13A8503C1F136FC4003F69DA /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				13A8503D1F136FC4003F69DA /* CardIO.h */,
+				13A8503E1F136FC4003F69DA /* CardIO.m */,
+				13A8503F1F136FC4003F69DA /* CardIOCreditCardInfo.h */,
+				13A850401F136FC4003F69DA /* CardIODetectionMode.h */,
+				13A850411F136FC4003F69DA /* CardIOPaymentViewController.h */,
+				13A850421F136FC4003F69DA /* CardIOPaymentViewControllerDelegate.h */,
+				13A850431F136FC4003F69DA /* CardIOUtilities.h */,
+				13A850441F136FC4003F69DA /* CardIOView.h */,
+				13A850451F136FC4003F69DA /* CardIOViewDelegate.h */,
+				13A850461F136FC4003F69DA /* libCardIO.a */,
+				13A850471F136FC4003F69DA /* libopencv_core.a */,
+				13A850481F136FC4003F69DA /* libopencv_imgproc.a */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+		227CE74F23063B0500E77B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				227CE75423063B0600E77B71 /* CleverTapSDK.framework */,
+				227CE75623063B0600E77B71 /* CleverTapSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		227CE76A23063F7A00E77B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				227CE77123063F7A00E77B71 /* libSDWebImage.a */,
+				227CE77323063F7A00E77B71 /* SDWebImage.framework */,
+				227CE77523063F7A00E77B71 /* SDWebImageMapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		723074A61C5237A600C5DF7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C2E0BA1E3B5F3F00883B3D /* FBSDKCoreKit.framework */,
+				72C2E0BB1E3B5F3F00883B3D /* FBSDKLoginKit.framework */,
+				72C2E0BC1E3B5F3F00883B3D /* FBSDKShareKit.framework */,
+				72C2E0BD1E3B5F3F00883B3D /* ParseFacebookUtilsV4.framework */,
+				721951DE1D0857CC0051F93C /* libxml2.tbd */,
+				721951CC1D0853E60051F93C /* SafariServices.framework */,
+				721951CA1D0853DB0051F93C /* MessageUI.framework */,
+				721951C81D0853D30051F93C /* CoreMedia.framework */,
+				721951C61D0853CA0051F93C /* AVFoundation.framework */,
+				721951C41D0853BF0051F93C /* Accelerate.framework */,
+				7230749E1C52378000C5DF7E /* libsqlite3.tbd */,
+				7230749C1C52377C00C5DF7E /* libz.tbd */,
+				721951CE1D0853FA0051F93C /* Bolts.framework */,
+				721951CF1D0853FA0051F93C /* Parse.framework */,
+				7230749A1C52377800C5DF7E /* SystemConfiguration.framework */,
+				723074961C52376F00C5DF7E /* Security.framework */,
+				723074941C52376A00C5DF7E /* QuartzCore.framework */,
+				723074921C52376600C5DF7E /* MobileCoreServices.framework */,
+				723074901C52376100C5DF7E /* CoreGraphics.framework */,
+				7230748E1C52375A00C5DF7E /* CoreLocation.framework */,
+				7230748C1C52375600C5DF7E /* CFNetwork.framework */,
+				7230748A1C52375100C5DF7E /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		724B96F71C522DF100F7704D = {
+			isa = PBXGroup;
+			children = (
+				724B97021C522DF200F7704D /* Shoppy */,
+				724B97011C522DF200F7704D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		724B97011C522DF200F7704D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				724B97001C522DF200F7704D /* Shoppy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		724B97021C522DF200F7704D /* Shoppy */ = {
+			isa = PBXGroup;
+			children = (
+				720620E71D9CF86100F5D82C /* Shoppy.entitlements */,
+				721951B11D0852D70051F93C /* Header.h */,
+				13A8503C1F136FC4003F69DA /* CardIO */,
+				726810761E3244FC005686A6 /* PayPalMobile */,
+				724B97031C522DF200F7704D /* AppDelegate.swift */,
+				72AF49501C522F9700C79F5E /* Configs.swift */,
+				724B97071C522DF200F7704D /* Main.storyboard */,
+				723C6AEA1D002A190064C723 /* Home.swift */,
+				723C6AEC1D002EDF0064C723 /* ProductsList.swift */,
+				722983E91D02FD4A006109AC /* ProdDetails.swift */,
+				721951AD1D081A3F0051F93C /* Wishlist.swift */,
+				721951AF1D08278B0051F93C /* Cart.swift */,
+				7225B08A1D096AFB00D85BCA /* Account.swift */,
+				7225B08C1D09A72800D85BCA /* MyOrders.swift */,
+				7208FB111DC207A800D4D646 /* ContactUs.swift */,
+				724B971D1C522E7000F7704D /* Login-SignUp */,
+				724B970A1C522DF200F7704D /* Assets.xcassets */,
+				7295FD101CEB424A008F0367 /* Titillium Font */,
+				723074A61C5237A600C5DF7E /* Frameworks */,
+				724B970F1C522DF200F7704D /* Info.plist */,
+				227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */,
+				227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */,
+			);
+			path = Shoppy;
+			sourceTree = "<group>";
+		};
+		724B971D1C522E7000F7704D /* Login-SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				724B97151C522E6D00F7704D /* Login.swift */,
+				724B97161C522E6D00F7704D /* SignUp.swift */,
+				724B97171C522E6D00F7704D /* TermsOfUse.swift */,
+				724B97181C522E6D00F7704D /* tou.html */,
+			);
+			name = "Login-SignUp";
+			sourceTree = "<group>";
+		};
+		726810761E3244FC005686A6 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				726810771E3244FC005686A6 /* libPayPalMobile.a */,
+				726810781E3244FC005686A6 /* PayPalConfiguration.h */,
+				726810791E3244FC005686A6 /* PayPalFuturePaymentViewController.h */,
+				7268107A1E3244FC005686A6 /* PayPalMobile.h */,
+				7268107B1E3244FC005686A6 /* PayPalOAuthScopes.h */,
+				7268107C1E3244FC005686A6 /* PayPalPayment.h */,
+				7268107D1E3244FC005686A6 /* PayPalPaymentViewController.h */,
+				7268107E1E3244FC005686A6 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		7295FD101CEB424A008F0367 /* Titillium Font */ = {
+			isa = PBXGroup;
+			children = (
+				7295FD111CEB424A008F0367 /* Titillium-Black.otf */,
+				7295FD121CEB424A008F0367 /* Titillium-Bold.otf */,
+				7295FD131CEB424A008F0367 /* Titillium-BoldItalic.otf */,
+				7295FD141CEB424A008F0367 /* Titillium-BoldUpright.otf */,
+				7295FD151CEB424A008F0367 /* Titillium-Light.otf */,
+				7295FD161CEB424A008F0367 /* Titillium-LightItalic.otf */,
+				7295FD171CEB424A008F0367 /* Titillium-LightUpright.otf */,
+				7295FD181CEB424A008F0367 /* Titillium-Regular.otf */,
+				7295FD191CEB424A008F0367 /* Titillium-RegularItalic.otf */,
+				7295FD1A1CEB424A008F0367 /* Titillium-RegularUpright.otf */,
+				7295FD1B1CEB424A008F0367 /* Titillium-Semibold.otf */,
+				7295FD1C1CEB424A008F0367 /* Titillium-SemiboldItalic.otf */,
+				7295FD1D1CEB424A008F0367 /* Titillium-SemiboldUpright.otf */,
+				7295FD1E1CEB424A008F0367 /* Titillium-Thin.otf */,
+				7295FD1F1CEB424A008F0367 /* Titillium-ThinItalic.otf */,
+				7295FD201CEB424A008F0367 /* Titillium-ThinUpright.otf */,
+			);
+			path = "Titillium Font";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		724B96FF1C522DF200F7704D /* Shoppy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724B97121C522DF200F7704D /* Build configuration list for PBXNativeTarget "Shoppy" */;
+			buildPhases = (
+				724B96FC1C522DF200F7704D /* Sources */,
+				724B96FD1C522DF200F7704D /* Frameworks */,
+				724B96FE1C522DF200F7704D /* Resources */,
+				227CE75B23063B6100E77B71 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				227CE75A23063B6100E77B71 /* PBXTargetDependency */,
+				22672AF42315E1FC007B371F /* PBXTargetDependency */,
+				22672AF82315E206007B371F /* PBXTargetDependency */,
+			);
+			name = Shoppy;
+			productName = ParseDemo;
+			productReference = 724B97001C522DF200F7704D /* Shoppy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		724B96F81C522DF100F7704D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "FV iMAGINATION";
+				TargetAttributes = {
+					724B96FF1C522DF200F7704D = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = A5J34NR598;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 724B96FB1C522DF100F7704D /* Build configuration list for PBXProject "Shoppy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 724B96F71C522DF100F7704D;
+			productRefGroup = 724B97011C522DF200F7704D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 227CE74F23063B0500E77B71 /* Products */;
+					ProjectRef = 227CE74E23063B0500E77B71 /* CleverTapSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = 227CE76A23063F7A00E77B71 /* Products */;
+					ProjectRef = 227CE76923063F7A00E77B71 /* SDWebImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				724B96FF1C522DF200F7704D /* Shoppy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		227CE75423063B0600E77B71 /* CleverTapSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CleverTapSDK.framework;
+			remoteRef = 227CE75323063B0600E77B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		227CE75623063B0600E77B71 /* CleverTapSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CleverTapSDK.framework;
+			remoteRef = 227CE75523063B0600E77B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		227CE77123063F7A00E77B71 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = 227CE77023063F7A00E77B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		227CE77323063F7A00E77B71 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 227CE77223063F7A00E77B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		227CE77523063F7A00E77B71 /* SDWebImageMapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImageMapKit.framework;
+			remoteRef = 227CE77423063F7A00E77B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		724B96FE1C522DF200F7704D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7295FD2D1CEB424A008F0367 /* Titillium-SemiboldUpright.otf in Resources */,
+				7295FD2B1CEB424A008F0367 /* Titillium-Semibold.otf in Resources */,
+				7295FD291CEB424A008F0367 /* Titillium-RegularItalic.otf in Resources */,
+				7295FD271CEB424A008F0367 /* Titillium-LightUpright.otf in Resources */,
+				7295FD261CEB424A008F0367 /* Titillium-LightItalic.otf in Resources */,
+				7295FD2E1CEB424A008F0367 /* Titillium-Thin.otf in Resources */,
+				7295FD281CEB424A008F0367 /* Titillium-Regular.otf in Resources */,
+				7295FD231CEB424A008F0367 /* Titillium-BoldItalic.otf in Resources */,
+				724B970B1C522DF200F7704D /* Assets.xcassets in Resources */,
+				7295FD221CEB424A008F0367 /* Titillium-Bold.otf in Resources */,
+				7295FD2C1CEB424A008F0367 /* Titillium-SemiboldItalic.otf in Resources */,
+				7295FD211CEB424A008F0367 /* Titillium-Black.otf in Resources */,
+				7295FD301CEB424A008F0367 /* Titillium-ThinUpright.otf in Resources */,
+				7295FD251CEB424A008F0367 /* Titillium-Light.otf in Resources */,
+				724B97091C522DF200F7704D /* Main.storyboard in Resources */,
+				7295FD2F1CEB424A008F0367 /* Titillium-ThinItalic.otf in Resources */,
+				7295FD2A1CEB424A008F0367 /* Titillium-RegularUpright.otf in Resources */,
+				7295FD241CEB424A008F0367 /* Titillium-BoldUpright.otf in Resources */,
+				724B971C1C522E6D00F7704D /* tou.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		724B96FC1C522DF200F7704D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723C6AED1D002EDF0064C723 /* ProductsList.swift in Sources */,
+				7225B08B1D096AFB00D85BCA /* Account.swift in Sources */,
+				7225B08D1D09A72800D85BCA /* MyOrders.swift in Sources */,
+				72AF49511C522F9700C79F5E /* Configs.swift in Sources */,
+				724B971B1C522E6D00F7704D /* TermsOfUse.swift in Sources */,
+				724B97041C522DF200F7704D /* AppDelegate.swift in Sources */,
+				724B971A1C522E6D00F7704D /* SignUp.swift in Sources */,
+				723C6AEB1D002A190064C723 /* Home.swift in Sources */,
+				724B97191C522E6D00F7704D /* Login.swift in Sources */,
+				7208FB121DC207A800D4D646 /* ContactUs.swift in Sources */,
+				721951B01D08278B0051F93C /* Cart.swift in Sources */,
+				13A850491F136FC4003F69DA /* CardIO.m in Sources */,
+				721951AE1D081A3F0051F93C /* Wishlist.swift in Sources */,
+				722983EA1D02FD4A006109AC /* ProdDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22672AF42315E1FC007B371F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			targetProxy = 22672AF32315E1FC007B371F /* PBXContainerItemProxy */;
+		};
+		22672AF82315E206007B371F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImageMapKit;
+			targetProxy = 22672AF72315E206007B371F /* PBXContainerItemProxy */;
+		};
+		227CE75A23063B6100E77B71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CleverTapSDK;
+			targetProxy = 227CE75923063B6100E77B71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		724B97071C522DF200F7704D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				724B97081C522DF200F7704D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		724B97101C522DF200F7704D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		724B97111C522DF200F7704D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		724B97131C522DF200F7704D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = Shoppy/Shoppy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shoppy/Parse",
+					"$(PROJECT_DIR)/Shoppy/Facebook",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Shoppy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shoppy/PayPalMobile",
+					"$(PROJECT_DIR)/Shoppy/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.demo.ecommerce;
+				PRODUCT_NAME = Shoppy;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Shoppy/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		724B97141C522DF200F7704D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = Shoppy/Shoppy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shoppy/Parse",
+					"$(PROJECT_DIR)/Shoppy/Facebook",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Shoppy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shoppy/PayPalMobile",
+					"$(PROJECT_DIR)/Shoppy/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.demo.ecommerce;
+				PRODUCT_NAME = Shoppy;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Shoppy/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		724B96FB1C522DF100F7704D /* Build configuration list for PBXProject "Shoppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724B97101C522DF200F7704D /* Debug */,
+				724B97111C522DF200F7704D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724B97121C522DF200F7704D /* Build configuration list for PBXNativeTarget "Shoppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724B97131C522DF200F7704D /* Debug */,
+				724B97141C522DF200F7704D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 724B96F81C522DF100F7704D /* Project object */;
+}
